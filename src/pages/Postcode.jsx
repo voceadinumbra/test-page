@@ -156,7 +156,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="max-w-7xl mx-auto px-4 pb-32">
+      <div className="max-w-7xl mx-auto px-4 pb-32 pt-16">
         <h2 className="text-2xl font-bold text-center mb-4">
           Choose Your Skip Size
         </h2>
@@ -178,7 +178,7 @@ export default function Home() {
                 className={`group relative rounded-lg border-2 p-4 md:p-6 transition-all
         border-[#2A2A2A] hover:border-[#0037C1]/50
         bg-[#1C1C1C] text-white cursor-pointer cursor-pointer transition-transform ${
-                  isSelected ? 'border-green-500' : 'border-transparent'
+                  isSelected ? 'border-[#0037C1]' : 'border-transparent'
                 }`}
               >
                 <Card className={`hover:shadow-lg transition`}>
@@ -226,8 +226,8 @@ export default function Home() {
                     
                     <button
                       className={`w-full py-2.5 md:py-3 px-4 rounded-md transition-all flex items-center justify-center space-x-2
-          bg-[#2A2A2A] text-white hover:bg-[#3A3A3A] hover:border-[#0037C1]
-          false ${isSelected ? 'bg-green-600 text-white cursor-default' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+          bg-[#0037C1] text-white hover:bg-[#0037C1] hover:border-[#0037C1]
+          false ${isSelected ? 'bg-[#0037C1] text-white cursor-default' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
                       onClick={() => {
                         if (!isSelected) setSelectedId(skip.id)
                       }}
